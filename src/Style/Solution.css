@@ -1,0 +1,57 @@
+#solution-container{
+    display: grid;
+    grid-template-rows:  8% 92%;
+}
+h3{
+    color:wheat;
+    margin:0;
+}
+form{
+    display: flex;
+    justify-content: center;
+}
+form>*{
+    display: flex;
+    height: 100%;
+    align-self: flex-start;
+    margin-top:1px;
+    justify-content: center;
+    align-items: center;
+}
+#grid-sol{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#grid-inside{
+    padding-top: 1%;
+    width: 50%;
+    height: 90%;
+    justify-content: center;
+    align-self:center;
+    align-items: center;
+    align-content: center;
+}
+.row-sol{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height:15%;
+    width: 100%;
+}
+.cell-sol{
+    background-color: wheat;
+    color:red;
+    padding-left:5%;
+    padding-right:5% ;
+    border:1px solid snow;
+    width: 10%;
+    height:100%;
+    font-size: 900;
+}
+.path{
+    background-color: green;
+    color:white
+}
