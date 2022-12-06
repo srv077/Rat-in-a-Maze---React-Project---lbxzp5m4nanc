@@ -10,8 +10,10 @@ export default function Maze() {
     <div id="ques-page">
         <div id="inputs">
           
-            <label>Number of rows or columns:</label>
-            <input type="number" min={3} max={6} value={arr} onChange={(e)=>setArr(e.target.value)}></input>
+            <label>Number of rows or columns:  (select a number less than 7 for better UI)</label>
+            <input type="number" min={3} max={6} maxLength ="1" value={arr} onChange={(e)=>{
+              (e.target.value<7)?setArr(e.target.value):setArr(6)
+              }}></input>
           
         </div>
         <div id="maze-whole" >
