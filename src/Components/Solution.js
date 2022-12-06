@@ -91,7 +91,7 @@ export default function Solution(props) {
   return (
     <div id="solution-container">
       <form onSubmit={handleSubmit}> 
-        <button type='submit'>Check</button>
+        <button id="check-btn" type='submit'>Check</button>
         {exist?(<h3> Paths found !</h3>):(<h3>No path found !</h3>)}
       </form>
       <div id="grid-sol">

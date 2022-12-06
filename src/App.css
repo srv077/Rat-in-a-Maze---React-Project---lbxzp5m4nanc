@@ -3,11 +3,13 @@
   height: 100%;
   background-color: black;
   display:grid;
-  grid-template-rows: 10% 90%;
+  grid-template-rows: 15% 85%;
 }
 #inputs{
   display: flex;
   flex-direction: column;
-  
+}
+button{
+  cursor: pointer;
 }
 

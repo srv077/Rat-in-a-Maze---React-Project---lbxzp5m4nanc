@@ -4,7 +4,8 @@ import '../Style/Header.css'
 export default function Header() {
   return (
     <div>
-      <h1>Can you help mr mouse to react his home?</h1>
+      <h2>Can you block mr mouse from reacting his home?</h2>
+      <h4>You can click any cell to block ( Red color in the cell means you blocked that cell) that cell </h4>
     </div>
   )
 }

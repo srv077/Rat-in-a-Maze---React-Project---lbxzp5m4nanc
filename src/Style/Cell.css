@@ -17,6 +17,7 @@
     padding-left:5%;
     padding-right:5% ;
     border:1px solid white;
+    cursor: pointer;
 }
 .rat{
     background-image: url("https://cdn.pixabay.com/photo/2016/06/21/20/23/lab-mouse-1471870_1280.png");
@@ -37,7 +38,7 @@
     width:100%;
     height:100%;
     display: grid;
-    grid-template-rows: 5% 95%;
+    grid-template-rows: 10% 90%;
     grid-template-columns: 100%;
 }
 #solution>#solution-save{
@@ -52,5 +53,19 @@
 #solution>*{
     width:100%;
     height: 100%;
+}
+#save-btn{
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: snow;
+    height: 97%;
+    width:4%;
+    border-radius: 10px;
+}
+#save-btn:hover{
+    height: 100%;
+    width: 5%;
 }
 

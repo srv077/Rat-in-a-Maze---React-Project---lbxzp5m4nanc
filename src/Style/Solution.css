@@ -1,6 +1,6 @@
 #solution-container{
     display: grid;
-    grid-template-rows:  8% 92%;
+    grid-template-rows:  9% 91%;
 }
 h3{
     color:wheat;
@@ -54,4 +54,16 @@ form>*{
 .path{
     background-color: green;
     color:white
+}
+#check-btn{
+    background-color: blue;
+    color: snow;
+    height: 95%;
+    width:4%;
+    border-radius: 50px
+}
+#check-btn:hover{
+    height:100%;
+    width:5%;
+    
 }
