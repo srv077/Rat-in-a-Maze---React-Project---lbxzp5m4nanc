@@ -4,18 +4,19 @@ import '../Style/Solution.css'
 
 export default function Solution(props) {
     const[now,setNow]=useState(props.ques)
+
     const[exist,setExist]=useState(true);
     const[show,setShow]=useState(false);
     const[ans,setAns]=useState([]);
+    
     const handleSubmit=(e)=>{
       e.preventDefault()
       check();
     }
     const check = ()=>{
-      const matrix=now;
+      // const matrix=now;
       let n=now.current.length;
-      solve(n,now.current);
-      
+      solve(n,now.current); 
     }
     const solve = (n,arr)=>{
         let solution=[];
@@ -27,11 +28,10 @@ export default function Solution(props) {
           }
          solution.push(solu);
         }
-        //the nth element of the nth array is always comming as 1 .i don't  know why
         solveMazeUtil(arr, 0, 0, solution,n)
         
     }
-    const isSafe=(arr,  x, y,n)=>{
+    const isSafe=(arr, x, y,n)=>{
 
       // if (x, y outside maze) return false
       return (x >= 0 && x < n && y >= 0

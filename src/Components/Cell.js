@@ -5,16 +5,7 @@ import Solution from './Solution';
 export default function Cell(props) {
     const[path,setPath]=useState("Lot of");
     const matrix = React.useRef([])
-    const handleSubmit=(e)=>{
-        e.preventDefault();
-        answers();
-    }
-    const answers=()=>{
-        showAnswers();
-    }
-    const showAnswers=()=>{
-        console.log(array);
-    }
+    
     const arr=[];
     for(let i=0;i<props.arr;i++){
         arr.push(i);
@@ -41,6 +32,7 @@ export default function Cell(props) {
             }
         }
     },[props])
+
     let array=[]
     for(let i=0;i<props.arr;i++){
         rerender();
@@ -88,3 +80,5 @@ export default function Cell(props) {
         </>
     )
 }
+
+
